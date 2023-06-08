@@ -19,19 +19,20 @@ const Celebrity = mongoose.model("Celebrity", celebritySchema);
 // Add 4 popular celebrities
 const celebrities = [
   {
-    name: "Tom Cruise",
+    name: "Jason Statham",
+    occupation: "Actor and former professional diver",
+    catchPhrase: "Can you smell what The Rock is cooking",
+  },
+  {
+    name: "Jennifer Lawrence",
+    occupation: "Actress",
+    catchPhrase:
+      "Do you know what happens to a man who doesn't pay his debts? He loses everything.from the movie Snatch",
+  },
+  {
+    name: "Robert Downey Jr.",
     occupation: "Actor",
-    catchPhrase: "Show me the money!",
-  },
-  {
-    name: "Beyoncé",
-    occupation: "Singer",
-    catchPhrase: "I woke up like this.",
-  },
-  {
-    name: "Daffy Duck",
-    occupation: "Cartoon character",
-    catchPhrase: "Youre despicable!",
+    catchPhrase: "I am Iron Man from the Marvel Cinematic Universe",
   },
   {
     name: "Kim Kardashian",

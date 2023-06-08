@@ -4,6 +4,17 @@ const router = require("express").Router();
 const Celebrity = require("../models/Celebrity");
 
 //another routs comes here
+router.get("/", (req, res) => {
+  Celebrity.find({}, (err, celebrities) => {
+    if (err) {
+      // Handle the error
+      console.log(err);
+      res.render("error"); // Render an error view or handle it in your preferred way
+    } else {
+      res.render("celebrities/celebrities", { celebrities });
+    }
+  });
+});
 
 // all your routes here
 

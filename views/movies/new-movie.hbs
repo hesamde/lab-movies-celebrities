@@ -1,0 +1,11 @@
+<form action="/movies/create" method="POST">
+  <!-- Other movie form fields -->
+
+  <select name="cast" multiple>
+    {{#each celebrities}}
+      <option value="{{_id}}">{{name}}</option>
+    {{/each}}
+  </select>
+
+  <button type="submit">Create Movie</button>
+</form>
